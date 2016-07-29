@@ -18,6 +18,7 @@ module.exports={
 				var def=$('.meaning').html();
 				console.log(def);
 				if(def){
+					def=def.trim();
 					defer.resolve(def);
 				}else{
 					defer.reject('some error im fetching definition');
