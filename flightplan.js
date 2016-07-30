@@ -6,7 +6,7 @@ plan.target('production',[
 		agent : process.env.SSH_AUTH_SOCK
 	}
 ]);
-var tmpDir='ahmar-com'+new Date().getTime();
+var tmpDir='urbandict_ref_'+new Date().getTime();
 
 plan.local(function(local)
 {
